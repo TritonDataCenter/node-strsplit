@@ -1,0 +1,13 @@
+{
+  "name": "strsplit",
+  "version": "0.0.1",
+  "description": "split a string by a regular expression",
+  "main": "lib/strsplit.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davepacheco/node-strsplit"
+  },
+  "keywords": [ "string", "split" ],
+  "author": "Dave Pacheco <dap@joyent.com>",
+  "license": "MIT"
+}
