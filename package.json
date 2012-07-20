@@ -7,6 +7,9 @@
     "type": "git",
     "url": "https://github.com/davepacheco/node-strsplit"
   },
+  "scripts": {
+    "test": "for f in tests/*.js; do echo \"$f\"; node \"$f\" || exit 1; echo; done; echo 'Passed'"
+  },
   "keywords": [ "string", "split" ],
   "author": "Dave Pacheco <dap@joyent.com>",
   "license": "MIT"

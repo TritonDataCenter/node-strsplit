@@ -30,9 +30,12 @@ JSSTYLE_FILES	 = $(JS_FILES)
 #
 # Repo-specific targets
 #
-.PHONY: all
+.PHONY: all test
 all:
 	$(NPM) install
+
+test:
+	$(NPM) test
 
 DISTCLEAN_FILES += node_modules
 
