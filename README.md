@@ -1,9 +1,10 @@
 # node-strsplit: split a string by a regular expression
 
-## strsplit(str, pattern[, limit])
+## strsplit(str, [pattern[, limit]])
 
 Splits a string `str` into fields using `pattern` as the separator, which may be
-either a string or a regular expression.
+either a string or a regular expression.  If `pattern` is not specified, then
+the regular expression `\s+` is used to split on whitespace.
 
 If `limit` is a positive number, the pattern will be applied at most `limit - 1`
 times and the returned array will have at most `limit` elements.  The last

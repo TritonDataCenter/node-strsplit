@@ -31,3 +31,7 @@ mod_assert.deepEqual([ '', '', '', '', 'two.three' ],
 /* limit effective */
 mod_assert.deepEqual([ 'one', 'two three' ],
     strsplit('one two three', ' ', 2));
+
+/* no pattern is equivalent to \s+ */
+mod_assert.deepEqual([ 'one', 'two', 'three', 'four' ],
+    strsplit('one \t two   three\t\nfour'));
