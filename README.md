@@ -34,10 +34,11 @@ Split a whitespace-separated list (e.g., output from "ps"):
     > strsplit('86008 ttys000    0:00.05 -bash', /\s+/);
     [ '86008', 'ttys000', '0:00.05', '-bash' ]
 
-Similarly, split a line into words:
+Or equivalently, leave off the pattern argument to split on whitespace by
+default:
 
-    > strsplit('How about a game of chess?', /\s+/)
-    [ 'How', 'about', 'a', 'game', 'of', 'chess?' ]
+    > strsplit('How about a nice game of chess?')
+    [ 'How', 'about', 'a', 'nice' 'game', 'of', 'chess?' ]
 
 Some tabular data formats allow the last field to contain the delimeter.  The
 reader is expected to know how many fields there are to avoid getting confused.
