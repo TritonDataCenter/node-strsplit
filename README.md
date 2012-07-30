@@ -47,7 +47,7 @@ The number of fields can be specified with the `limit` argument:
     > strsplit('101 55 46 San Francisco Giants', ' ', 4);
     [ '101', '55', '46', 'San Francisco Giants' ]
 
-See [node-strtab](https://github.com/davepacheco/node-tab) for a higher-level
+See [node-tab](https://github.com/davepacheco/node-tab) for a higher-level
 interface to read and write tabular data.
 
 
