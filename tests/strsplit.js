@@ -44,3 +44,9 @@ mod_assert.deepEqual([ 'one', 'two three' ],
     strsplit('one two three', ' ', 2));
 mod_assert.deepEqual([ 'one', 'two\tthree' ],
     strsplit('one     two\tthree', /\s+/, 2));
+
+/* Test default pattern */
+mod_assert.deepEqual([ 'one', 'two', 'three', 'four' ],
+    strsplit('    one   two three\tfour  '));
+mod_assert.deepEqual([ 'one', 'two three\tfour' ],
+    strsplit('    one   two three\tfour  ', null, 2));
