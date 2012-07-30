@@ -40,7 +40,7 @@ default:
     > strsplit('How about a nice game of chess?')
     [ 'How', 'about', 'a', 'nice' 'game', 'of', 'chess?' ]
 
-Some tabular data formats allow the last field to contain the delimeter.  The
+Some tabular data formats allow the last field to contain the delimiter.  The
 reader is expected to know how many fields there are to avoid getting confused.
 The number of fields can be specified with the `limit` argument:
 
