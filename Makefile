@@ -22,7 +22,7 @@ NPM		 = npm
 #
 # Files
 #
-JS_FILES	:= $(shell find lib tests -name '*.js')
+JS_FILES	:= $(shell find lib tests survey -name '*.js')
 JSL_CONF_NODE	 = tools/jsl.node.conf
 JSL_FILES_NODE   = $(JS_FILES)
 JSSTYLE_FILES	 = $(JS_FILES)
@@ -33,6 +33,11 @@ JSSTYLE_FILES	 = $(JS_FILES)
 .PHONY: all
 all:
 	$(NPM) install
+
+test:
+	tests/tst.strsplit.sh
+	tests/tst.strpatterns.js
+	@echo All tests passed.
 
 DISTCLEAN_FILES += node_modules
 

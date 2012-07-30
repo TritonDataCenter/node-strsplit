@@ -1,6 +1,6 @@
 {
   "name": "strsplit",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "split a string by a regular expression",
   "main": "lib/strsplit.js",
   "repository": {
@@ -9,5 +9,8 @@
   },
   "keywords": [ "string", "split" ],
   "author": "Dave Pacheco <dap@joyent.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "make test"
+  }
 }

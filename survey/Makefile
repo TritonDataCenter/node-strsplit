@@ -1,4 +1,4 @@
-all: java.csv perl.csv python.csv
+all: java.csv perl.csv python.csv js-strsplit.csv
 
 java.csv: testcases.csv | StringSplitTest.class
 	java StringSplitTest < $< > $@
@@ -12,5 +12,8 @@ perl.csv: testcases.csv strsplit.pl
 python.csv: testcases.csv strsplit.py
 	./strsplit.py < $< > $@
 
+js-strsplit.csv: testcases.csv strsplit.js
+	./strsplit.js < $< > $@
+
 clean:
-	rm -f java.csv perl.csv python.csv StringSplitTest.class
+	rm -f java.csv perl.csv python.csv js-strsplit.csv StringSplitTest.class
