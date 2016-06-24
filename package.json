@@ -5,7 +5,7 @@
   "main": "lib/strsplit.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davepacheco/node-strsplit"
+    "url": "https://github.com/joyent/node-strsplit"
   },
   "keywords": [ "string", "split" ],
   "author": "Dave Pacheco <dap@joyent.com>",
