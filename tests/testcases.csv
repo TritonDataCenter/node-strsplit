@@ -1,10 +1,10 @@
 # basic cases
-0; ;one two three
-1; ;one two three
-2; ;one two three
-3; ;one two three
-4; ;one two three
--1; ;one two three
+0;_;one_two_three
+1;_;one_two_three
+2;_;one_two_three
+3;_;one_two_three
+4;_;one_two_three
+-1;_;one_two_three
 
 # basic cases with a regex 
 0;\s+;one two\t three
@@ -12,24 +12,24 @@
 0;\s+;one   two \t three
 
 # empty leading fields
-0; ; one two three
-2; ; one two three
-0; ;   one two three
+0;_;_one_two_three
+2;_;_one_two_three
+0;_;___one_two_three
 
 # 1 empty trailing field
-0; ;one two three 
-1; ;one two three 
-2; ;one two three 
-3; ;one two three 
-4; ;one two three 
--1; ;one two three 
+0;_;one_two_three_
+1;_;one_two_three_
+2;_;one_two_three_
+3;_;one_two_three_
+4;_;one_two_three_
+-1;_;one_two_three_
 
 # 3 empty trailing fields
-0; ;one two three   
-1; ;one two three   
-2; ;one two three   
-3; ;one two three   
-4; ;one two three   
-5; ;one two three   
-6; ;one two three   
--1; ;one two three   
+0;_;one_two_three___
+1;_;one_two_three___
+2;_;one_two_three___
+3;_;one_two_three___
+4;_;one_two_three___
+5;_;one_two_three___
+6;_;one_two_three___
+-1;_;one_two_three___
