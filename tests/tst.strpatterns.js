@@ -35,3 +35,7 @@ mod_assert.deepEqual([ 'one', 'two three' ],
 /* no pattern is equivalent to \s+ */
 mod_assert.deepEqual([ 'one', 'two', 'three', 'four' ],
     strsplit('one \t two   three\t\nfour'));
+
+/* Don't lose flags when a limit is given. */
+mod_assert.deepEqual([ 'foo\n\n', 'bar' ],
+    strsplit('foo\n\n    bar', /^    /m, 2));
